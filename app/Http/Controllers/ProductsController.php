@@ -40,7 +40,12 @@ class ProductsController extends Controller
 
     public function store(Request $request)
     {
-        $product = Product::create([
+
+        if (!$request->name || !$request->image || !$request->price || !$request->quantity || !$request->category_id) {
+            return redirect('/products/create')->with('error', 'Porfavor llena los campos.');
+        }
+
+        Product::create([
             'name' => $request->name,
             'image' => $request->image,
             'price' => $request->price,
@@ -48,7 +53,7 @@ class ProductsController extends Controller
             'category_id' => $request->category_id,
         ]);
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Producto creado.');
     }
 
     public function filter(Request $request)
@@ -63,12 +68,19 @@ class ProductsController extends Controller
 
         $products = $query->with('category')->get();
 
-        if ($products->count() === 0) {
+        if ($products->isEmpty()) {
             return view('components._empty');
         }
 
         return view('components._products', [
             'products' => $products,
         ]);
+    }
+
+    public function delete(Request $request)
+    {
+        Product::where('id', $request->id)->delete();
+
+        return redirect('/')->with('success', 'Producto eliminado 🗑️.');
     }
 }

@@ -1,6 +1,15 @@
 {{-- _products.blade.php --}}
 @foreach ($products as $product)
-    <li>
+    <li class="relative group">
+        <div class="text-red-500 absolute -top-2 -right-3 bg-white px-1 rounded-full text-xl hidden group-hover:block">
+            <button type="submit" form="delete-form-{{ $product->id }}">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <form id="delete-form-{{ $product->id }}" action="/products/delete" method="POST" class="hidden">
+                @csrf
+                <input type="hidden" name="id" value="{{ $product->id }}">
+            </form>
+        </div>
         <div class="max-w-sm rounded overflow-hidden shadow-lg h-full flex flex-col justify-between">
             <img class="w-full h-full object-cover" src="{{ $product->image }}" alt="Sunset in the mountains">
             <div class="bg-slate-100">

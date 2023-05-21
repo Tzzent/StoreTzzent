@@ -9,15 +9,30 @@ class CategoriesController extends Controller
 {
     public function index()
     {
-        return view('categories.create');
+        $categories = Category::all();
+
+        return view('categories.index', [
+            'categories' => $categories,
+        ]);
     }
 
-    public function store(Request $request)
+    public function create(Request $request)
     {
+        if (!$request->name) {
+            return redirect('/categories')->with('error', 'Porfavor llena el campo.');
+        }
+
         Category::create([
             'name' => $request->name,
         ]);
 
-        return redirect('/');
+        return redirect('/categories')->with('success', 'Categoria creada.');
+    }
+
+    public function delete(Request $request)
+    {
+        Category::where('id', $request->id)->delete();
+
+        return redirect('/categories')->with('success', 'Categoria eliminada 🗑️.');
     }
 }

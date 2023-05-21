@@ -1,6 +1,11 @@
 @extends('layout.app')
 
 @section('content')
+    @if (session('success'))
+        <script>
+            toastr.success('{{ session('success') }}');
+        </script>
+    @endif
     <div class="flex-row-reverse flex items-center justify-between mb-10">
         <div>
             <h1 class="font-bold text-lg text-orange-900">Lista de productos</h1>
@@ -55,7 +60,7 @@
     </script>
     {{-- Script  --}}
 
-    <div>
+    <div class="">
         <ul id="product-component"
             class="
             grid

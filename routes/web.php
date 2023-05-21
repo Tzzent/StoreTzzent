@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ProductsController::class, 'index']);
 Route::get('/products', [ProductsController::class, 'index']);
+Route::post('/products', [ProductsController::class, 'store']);
+Route::post('/products/delete', [ProductsController::class, 'delete']);
 Route::get('/products/create', [ProductsController::class, 'create']);
 Route::get('/products/filter', [ProductsController::class, 'filter']);
 
-Route::post('/products', [ProductsController::class, 'store']);
-
-
-Route::get('/categories/create', [CategoriesController::class, 'index']);
-Route::post('/categories/create', [CategoriesController::class, 'store']);
+Route::get('/categories', [CategoriesController::class, 'index']);
+Route::post('/categories/create', [CategoriesController::class, 'create']);
+Route::post('/categories/delete', [CategoriesController::class, 'delete']);

@@ -26,13 +26,13 @@
             </div>
         </div>
         <div class="flex mb-2">
-            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <div x-data="{ price: '' }" class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
                     Precio
                 </label>
-                <input name="price"
+                <input x-model="price" x-on:input="price = price.replace(/[^0-9.]/g, '')" name="price"
                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-city" type="number" placeholder="99.99">
+                    id="grid-city" type="text" placeholder="99.99">
             </div>
             <div class="w-full md:w-1/3 px-3">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
@@ -68,4 +68,10 @@
             </button>
         </div>
     </form>
+
+    @if (session('error'))
+        <script>
+            toastr.error('{{ session('error') }}');
+        </script>
+    @endif
 @endsection
