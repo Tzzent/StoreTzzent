@@ -7,60 +7,43 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+<h1 align="center">StoreTzzent | @Tzzent</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://squid-app-9ysd6.ondigitalocean.app/">
+     🌐 WebSite
+    </a>
+  </h3>
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+El presente proyecto esta realizado en laravel, en donde puedes crear una categoria, agregar productos. Algo simple.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Características
 
-## Learning Laravel
+- Agregar categoria
+- Agregar producto
+- Filtrar datos acorde a categorias
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tecnologias
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- PostgreSQL
+- PHP, Laravel
+- HTML
+- Tailwind
+- Alpine.js
+- Ajax
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Capturas de pantalla
 
-## Laravel Sponsors
+🖥️ Desktop <br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![Screenshot 2023-05-20 at 20-19-59 Mi Tienda](https://github.com/Tzzent/FoxbelMusic/assets/86677547/76f128e5-bdcc-4742-908c-a3305d233d63)
+![Screenshot 2023-05-20 at 20-20-12 Mi Tienda](https://github.com/Tzzent/FoxbelMusic/assets/86677547/00419509-2fbb-4d20-9a38-5d60d7b60010)
+![Screenshot 2023-05-20 at 20-20-19 Mi Tienda](https://github.com/Tzzent/FoxbelMusic/assets/86677547/2997f148-56e9-4d09-aab8-daade7c5e6f2)
 
-### Premium Partners
+## Contacto 🗣️
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- [Instagram](https://www.instagram.com/tzzent/)
+- [Facebook](https://www.facebook.com/Tzzent/)
+- [Whatsapp](https://api.whatsapp.com/send?phone=+51900899785&text=Hola!%20Puedo%20realizar%20una%20consulta?)
